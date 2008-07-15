@@ -1,0 +1,16 @@
+
+h1. FlexMVCS
+
+FlexMVCS is an application framework for developing Flex functionality. This is a modification of the excellent "PureMVC":http://www.puremvc.org framework to resolve some perceived problems with the existing PureMVC design.
+
+FlexMVCS was designed and implemented by "Ali Mills":http://www.alimills.com and "Luke Bayes":http://www.lukebayes.com of "Pattern Park, Inc.":http://www.patternpark.com and was entirely funded and generously contributed to the community by "Bunchball, Inc":http://www.bunchball.com.
+
+This build differs from PureMVC in the following ways:
+
+* Removed unnecessary use of Singletons.
+* Added IService as a first-class participant and member of IFacade.
+* Created asynchronous commands that trigger events when complete.
+* Added composite command that facilitates synchronous and asynchronous command chaining with support for arbitrary composition depth.
+* Added MXML Facade definitions. Application Facades can be defined using MXML instead of only ActionScript.
+* Added support for Modular Flex applications, including composite Facades for each loaded module.
+

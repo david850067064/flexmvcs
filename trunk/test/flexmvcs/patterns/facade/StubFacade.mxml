@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FlexFacade 
+	xmlns="flexmvcs.patterns.facade.*"
+	xmlns:command="flexmvcs.patterns.command.*"
+	xmlns:service="flexmvcs.patterns.service.*"
+	xmlns:mx="http://www.adobe.com/2006/mxml"
+	>
+	<services>
+		<service:StubService serviceId="{StubConstants.STUB_SERVICE}" />
+	</services>
+	<commands>
+		<command:CommandContainer commandReference="{StubCommand}" notificationName="{StubConstants.SET_DESCRIPTION}" />
+	</commands>
+	<proxies>
+		<StubProxy proxyName="{StubConstants.STUB_PROXY}" />
+	</proxies>
+	<mediators>
+		<StubMediator view="{context.label}" />
+	</mediators>
+</FlexFacade>
