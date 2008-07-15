@@ -1,0 +1,4 @@
+
+The Creative Commons license is applied to the files found in lib/puremvc.
+
+The MIT license is applied to all other files in this project.

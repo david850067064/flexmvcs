@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FlexFacade 
+	xmlns="flexmvcs.patterns.facade.*"
+	xmlns:command="flexmvcs.patterns.command.*"
+	xmlns:mx="http://www.adobe.com/2006/mxml"
+	>
+	<commands>
+		<command:CommandContainer commandReference="{StubCommand}" notificationName="{StubConstants.CHILD_SET_DESCRIPTION}" />
+	</commands>
+	<proxies>
+		<StubProxy proxyName="{StubConstants.CHILD_STUB_PROXY}" />
+	</proxies>
+</FlexFacade>
