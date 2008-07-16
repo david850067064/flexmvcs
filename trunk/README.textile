@@ -14,3 +14,15 @@ This build differs from PureMVC in the following ways:
 * Added MXML Facade definitions. Application Facades can be defined using MXML instead of only ActionScript.
 * Added support for Modular Flex applications, including composite Facades for each loaded module.
 
+This project can be compiled in a variety of ways.
+
+If you have MXMLC in your class path, download AsUnit ActionScript 3 library (http://www.asunit.org), place it in lib/asunit3 and run the following command:
+
+mxmlc -default-size 1000 550 -output=bin/FlexMVCSRunner.swf -source-path+=src -source-path+=assets -source-path+=lib/puremvc -source-path+=test -source-path+=lib/asunit3 -verbose-stacktraces=true -warnings=true src/FlexMVCSRunner.mxml
+
+If you would like a better compilation environment, download and install Ruby and RubyGems and run the following commands from the main project directory:
+
+gem install rake
+rake test
+
+This second approach uses Project Sprouts (http://www.projectsprouts.org), an open source project from Luke Bayes.
